@@ -39,7 +39,7 @@ namespace OutlookTest
                     foreach (Outlook.MAPIFolder innerFolder in folder.Folders)
                     {
                         Console.WriteLine("++{0}", innerFolder.Name);
-                        if (innerFolder.Name == "Magical Inbox")
+                        if (innerFolder.Name == "Inbox")
                         {
                             Outlook.Items items = innerFolder.Items;
                             foreach (Outlook.MailItem item in items)
